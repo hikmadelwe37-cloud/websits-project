@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="country.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Country Explorer</h1>
+
+        <!-- Search and Filter Controls -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search country by name..." oninput="filterCountries()">
+
+            <select id="regionFilter" onchange="filterCountries()">
+                <option value="">All Regions</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+        <!-- State Messages -->
+        <div id="loading" class="state-msg">Loading countries from API...</div>
+        <div id="error" class="state-msg error" style="display: none;"></div>
+
+        <!-- Country Cards Grid -->
+        <div id="countryGrid" class="country-grid"></div>
+    </div>
+
+    <script src="country.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* Style the whole page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f4f4f9;
+}
+
+/* Style the title */
+#title {
+    font-size: 2.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+    /* Makes the color change smooth! */
+}
+
+/* Style the button */
+#colorButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#colorButton:hover {
+    background-color: #0056b3;
+}
+.dark {
+    background-color: #222;
+    color: white;
+}
