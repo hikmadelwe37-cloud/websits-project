@@ -485,6 +485,28 @@ footer {
     padding: 25px;
     font-size: 14px;
 }
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-social a {
+    color: #d889b2;
+    display: inline-flex;
+    transition: 0.3s;
+}
+
+.footer-social svg {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-social a:hover {
+    color: white;
+    transform: scale(1.2);
+}
 
 /* ========================================
    13. TABLET RESPONSIVE DESIGN
@@ -512,7 +534,7 @@ footer {
     .hero-image {
         max-width: 250px;
     }
-[30/10/2026 22:25] Eneb: .skills-container,
+.skills-container,
     .interests-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
